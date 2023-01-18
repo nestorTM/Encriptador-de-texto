@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador de texto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img src="imagenes/logo.PNG" alt="Logo encriptador para Alura"></h1>
+                
+            </div>
+        </header>
+
+        <main>
+            <form>
+                <fieldset class="encriptar-desencriptar">
+                    <textarea name="texto_encriptado" cols="150" rows="30"  class="input-padron" spellcheck="false" placeholder="ingrese su texto aquì"></textarea>
+                    <i class="fa fa-exclamation-circle" style="font-size:1em; color: gray;">Solo letras minusculas sin acentos</i>
+                    <div class="botones">
+                        <input type="button" value="Encriptar" onclick="borrartxt()" id="encriptar">
+                        <input type="button" value="Desencriptar" onclick="borrartxt()" id="desencriptar">
+                    </div>
+                    
+
+                </fieldset>
+            
+
+                <section class="resultado">
+                    <img id="imagenDetective" src="imagenes/detective.png">
+                    <img id="imagenDiamante" src="imagenes/imagen_resultado.PNG">
+                    <h2 id="textoEncontrado">Ningun mensaje fue encontrado</h2> 
+                    <p id="mensajeIngreso">ingresa el texto que deseas encriptar o desencriptar</p>
+                    <p id="textoTransformado"></p>
+                    <div class="botones">
+                        <input type="button" value="Copiar" id="copiar">
+                    </div>
+                </section>
+            </form>
+        </main>
+
+        <footer>
+            
+            <img id="imgLinkedin" src="imagenes/linkedin.png"><a class="redsocial" href="https://www.linkedin.com/in/nestor-tiempos-25971b206/?locale=en_US">Nestor Tiempos</a>
+            <br>
+            <img id="imgGitHub" src="imagenes/github.png" width="3.7%"><a class="redsocial" href="https://github.com/nestorTM">NestorTM</a>
+            <p class="copyright">	
+                &#8471 Copyright Encriptador-NestorTM.</p>
+        </footer>
+        <script src="challeng.js"></script>
+    </body>
+</html>

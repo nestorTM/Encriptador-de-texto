@@ -56,13 +56,8 @@ function capturarTexto(){
         return texto.value;
     }
     else{
-       
-       
-        
-
         alert("solo se aceptan minusculas y sin acentos, por favor vuelve a intetar");
         return texto.value="";
-        
     }
    
 }
@@ -85,7 +80,6 @@ function desencriptarTexto(texto){
     texto = texto.replace(/ai/g,"a");
     texto = texto.replace(/ober/g,"o");
     texto = texto.replace(/ufat/g,"u");
-
     return texto;
 
 }
